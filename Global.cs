@@ -8,7 +8,7 @@ namespace BetterBadge
         public static List<string> CustomBadges = new List<string>();
         public static List<int> PlayersWithCustomBadge = new List<int>();
 
-        public static string CustomBadgesFilePath = Path.Combine("/etc/PluginData/");
+        public static string CustomBadgesFilePath = Path.Combine("/etc/scpsl/Plugin/");
 
         public static string CustomBadgesFileName = "CustomBadges.txt";
 
