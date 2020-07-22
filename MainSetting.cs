@@ -4,8 +4,8 @@ namespace BetterBadge
 {
     public class MainSetting : Plugin
     {
-        public override string getName => "BetterBadge";
-        private SetEvent SetEvent;
+        public override string getName => nameof(BetterBadge);
+        public SetEvent SetEvent { get; set; }
         public override void OnEnable()
         {
             SetEvent = new SetEvent();

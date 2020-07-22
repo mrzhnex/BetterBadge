@@ -29,7 +29,7 @@ namespace BetterBadge
             }
         }
 
-        internal void OnPlayerJoin(PlayerJoinEvent ev)
+        public void OnPlayerJoin(PlayerJoinEvent ev)
         {
             if (Global.PluginEnable && !Global.PlayersWithCustomBadge.Contains(ev.Player.GetPlayerId()))
             {
