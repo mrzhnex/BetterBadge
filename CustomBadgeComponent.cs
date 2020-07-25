@@ -1,4 +1,4 @@
-﻿using EXILED;
+﻿using Exiled.API.Features;
 using UnityEngine;
 
 namespace BetterBadge

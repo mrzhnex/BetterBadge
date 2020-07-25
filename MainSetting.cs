@@ -1,28 +1,26 @@
-﻿using EXILED;
+﻿using Exiled.API.Features;
 
 namespace BetterBadge
 {
-    public class MainSetting : Plugin
+    public class MainSetting : Plugin<Config>
     {
-        public override string getName => nameof(BetterBadge);
+        public override string Name => nameof(BetterBadge);
         public SetEvent SetEvent { get; set; }
-        public override void OnEnable()
+        public override void OnEnabled()
         {
             SetEvent = new SetEvent();
-            Events.SetGroupEvent += SetEvent.OnSetGroup;
-            Events.WaitingForPlayersEvent += SetEvent.OnWaitingForPlayers;
-            Events.PlayerJoinEvent += SetEvent.OnPlayerJoin;
-            Log.Info(getName + " on");
+            Exiled.Events.Handlers.Player.ChangingGroup += SetEvent.OnChangingGroup;
+            Exiled.Events.Handlers.Server.WaitingForPlayers += SetEvent.OnWaitingForPlayers;
+            Exiled.Events.Handlers.Player.Joined += SetEvent.OnJoined;
+            Log.Info(Name + " on");
         }
 
-        public override void OnDisable()
+        public override void OnDisabled()
         {
-            Events.SetGroupEvent -= SetEvent.OnSetGroup;
-            Events.WaitingForPlayersEvent -= SetEvent.OnWaitingForPlayers;
-            Events.PlayerJoinEvent -= SetEvent.OnPlayerJoin;
-            Log.Info(getName + " off");
+            Exiled.Events.Handlers.Player.ChangingGroup -= SetEvent.OnChangingGroup;
+            Exiled.Events.Handlers.Server.WaitingForPlayers -= SetEvent.OnWaitingForPlayers;
+            Exiled.Events.Handlers.Player.Joined -= SetEvent.OnJoined;
+            Log.Info(Name + " off");
         }
-
-        public override void OnReload() { }
     }
 }
