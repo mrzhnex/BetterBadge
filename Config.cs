@@ -4,6 +4,6 @@ namespace BetterBadge
 {
     public class Config : IConfig
     {
-        bool IConfig.IsEnabled { get; set; } = true;
+        public bool IsEnabled { get; set; } = true;
     }
 }
