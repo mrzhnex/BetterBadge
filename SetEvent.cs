@@ -11,7 +11,7 @@ namespace BetterBadge
     {
         internal void OnChangingGroup(ChangingGroupEventArgs ev)
         {
-            if (Global.PluginEnable && !Global.PlayersWithCustomBadge.Contains(ev.Player.Id))
+            if (Global.PluginEnable && ev.Player != null && !Global.PlayersWithCustomBadge.Contains(ev.Player.Id))
             {
                 foreach (string cb in Global.CustomBadges)
                 {

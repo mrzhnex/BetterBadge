@@ -126,7 +126,6 @@ F:\Портфолио\SCP SL plugins\BetterBadge\obj\Debug\BetterBadge.dll
 F:\Портфолио\SCP SL plugins\BetterBadge\obj\Debug\BetterBadge.pdb
 E:\SCP SL plugins\BetterBadge\bin\Debug\BetterBadge.dll
 E:\SCP SL plugins\BetterBadge\bin\Debug\BetterBadge.pdb
-E:\SCP SL plugins\BetterBadge\obj\Debug\BetterBadge.csprojAssemblyReference.cache
 E:\SCP SL plugins\BetterBadge\obj\Debug\BetterBadge.csproj.CoreCompileInputs.cache
 E:\SCP SL plugins\BetterBadge\obj\Debug\BetterBadge.csproj.CopyComplete
 E:\SCP SL plugins\BetterBadge\obj\Debug\BetterBadge.dll
